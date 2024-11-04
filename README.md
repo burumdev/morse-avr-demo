@@ -35,3 +35,5 @@ Licensed under
  - MIT license
    ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
+## Project in Action
+<img src="https://raw.githubusercontent.com/burumdev/morse-avr-demo/refs/heads/master/morse-avr-decoder.jpg" alt="morse decoder for arduino" />
