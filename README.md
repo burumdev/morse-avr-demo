@@ -1,4 +1,4 @@
-avr-morse
+Morse Code Decoder for Arduino UNO
 =========
 
 Morse code decoder embedded project for the _Arduino Uno_. It uses four buttons
