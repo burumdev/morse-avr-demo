@@ -1,7 +1,18 @@
 avr-morse
 =========
 
-Rust project for the _Arduino Uno_.
+Morse code decoder embedded project for the _Arduino Uno_. It uses four buttons
+to enter morse signals and create a message. Message is shown on a 16x2 LCD
+display (HITACHI HD4478).
+
+## Libraries used
+1. [avr-hal](https://github.com/Rahix/avr-hal) as AVR hardware abstraction layer to compile code to AVR architecture
+and use it's API's to program the chip.
+
+2. [morse-codec](https://github.com/burumdev/morse-codec) as morse decoder library that forms text messages from
+morse signals on the fly.
+
+3. [ag-lcd](https://github.com/mjhouse/ag-lcd) as LCD display driver.
 
 ## Build Instructions
 1. Install prerequisites as described in the [`avr-hal` README] (`avr-gcc`, `avr-libc`, `avrdude`, [`ravedude`]).
@@ -13,22 +24,14 @@ Rust project for the _Arduino Uno_.
    <https://crates.io/crates/ravedude>.
 
 4. `ravedude` will open a console session after flashing where you can interact
-   with the UART console of your board.
+   with the UART console of your board. You can use this to debug the code.
 
 [`avr-hal` README]: https://github.com/Rahix/avr-hal#readme
 [`ravedude`]: https://crates.io/crates/ravedude
 
 ## License
-Licensed under either of
+Licensed under
 
- - Apache License, Version 2.0
-   ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
  - MIT license
    ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
-at your option.
-
-## Contribution
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you, as defined in the Apache-2.0 license, shall
-be dual licensed as above, without any additional terms or conditions.
