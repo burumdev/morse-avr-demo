@@ -16,13 +16,10 @@ ufmt = "0.2.0"
 nb = "1.1.0"
 embedded-hal = "1.0"
 ag-lcd = { version = "0.2.0" }
+morse-codec = { version = "0.3.1", features = ["decoder"] }
 
 [dependencies.avr-device]
 version = "0.5.4"
-
-[dependencies.morse-codec]
-path = "../morse-codec"
-features = ["decoder"]
 
 [dependencies.arduino-hal]
 git = "https://github.com/rahix/avr-hal"

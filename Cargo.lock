@@ -150,6 +150,8 @@ dependencies = [
 [[package]]
 name = "morse-codec"
 version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "85a62decc57cae01738ab42786f6eab0d27bcd4f984c8a3cdabc39dc6c4a282b"
 
 [[package]]
 name = "nb"
